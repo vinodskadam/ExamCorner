@@ -1,4 +1,4 @@
-package exam.com.skew.exam;
+package com.skew.exammania;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
