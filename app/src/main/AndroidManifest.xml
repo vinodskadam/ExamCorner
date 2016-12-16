@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="exam.com.skew.exam">
+    package="com.skew.exammania">
 
     <application
         android:allowBackup="true"
@@ -18,6 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".QuestionScreen" />
+        <activity android:name=".SegmentScreen" />
+        <activity android:name=".ChallengeScreen" />
+        <activity android:name=".AddFriendScreen" />
+        <activity android:name=".FriendListScreen" />
+        <activity android:name=".ConnectInstituteScreen" />
+        <activity android:name=".OffersScreen" />
+        <activity android:name=".ReportCardScreen" />
+        <activity android:name=".BooksNotesScreen" />
+        <activity android:name=".UpdateProfileScreen"></activity>
     </application>
 
 </manifest>

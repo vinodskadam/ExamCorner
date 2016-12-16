@@ -1,4 +1,4 @@
-package exam.com.skew.exam;
+package exam.com.skew.exammania;
 
 import org.junit.Test;
 
