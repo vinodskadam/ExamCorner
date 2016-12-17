@@ -8,5 +8,171 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.skew.exammania.QuestionScreen">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Topic"
+                android:id="@+id/topicid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Question No"
+                android:id="@+id/qid"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_alignEnd="@+id/scrollView"
+                android:layout_marginEnd="229dp" />
+
+            <TextView
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="By: ClassName"
+                android:id="@+id/questionByid" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_marginTop="5dp"
+                android:layout_alignEnd="@+id/scrollView">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/button2" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:id="@+id/button" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:id="@+id/button3" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:id="@+id/button4" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/button5" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:id="@+id/button6" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:id="@+id/button7" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Question Info"
+                android:id="@+id/qinfoid" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="QTEXT"
+                android:id="@+id/qtextid"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_marginTop="5dp"
+                android:layout_alignEnd="@+id/scrollView"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option A"
+                android:id="@+id/optionAid"
+                android:layout_below="@+id/qtextid"
+                android:layout_alignEnd="@+id/scrollView"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option B"
+                android:id="@+id/optionBid"
+                android:layout_below="@+id/optionAid"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/scrollView" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option C"
+                android:id="@+id/optionCid"
+                android:layout_below="@+id/optionBid"
+                android:layout_alignEnd="@+id/optionBid"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option D"
+                android:id="@+id/optionDid"
+                android:layout_below="@+id/optionCid"
+                android:layout_alignEnd="@+id/optionCid"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Correct Ans"
+                android:id="@+id/correctAnsid"
+                android:layout_alignBottom="@+id/scrollView"
+                android:layout_alignParentStart="true"
+                 />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Challenge This"
+                android:id="@+id/challengethisid" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

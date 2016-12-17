@@ -8,16 +8,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".QuestionScreen" />
         <activity android:name=".SegmentScreen" />
         <activity android:name=".ChallengeScreen" />
@@ -27,7 +17,14 @@
         <activity android:name=".OffersScreen" />
         <activity android:name=".ReportCardScreen" />
         <activity android:name=".BooksNotesScreen" />
-        <activity android:name=".UpdateProfileScreen"></activity>
+        <activity android:name=".UpdateProfileScreen" />
+        <activity android:name=".DashboardScreen" />
+        <activity android:name=".RegistrationScreen" />
+        <activity android:name=".OTPScreen" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Banking_Segments" />
+        <activity android:name=".MPSC_UPSC_Segments" />
+        <activity android:name=".WelcomeActivity"></activity>
     </application>
 
 </manifest>
