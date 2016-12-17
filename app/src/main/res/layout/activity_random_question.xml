@@ -7,11 +7,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.skew.exammania.QuestionScreen">
+    tools:context="com.skew.exammania.RandomQuestionActivity">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="false">
+        android:fillViewport="false"
+        android:foregroundGravity="center_horizontal">
 
         <LinearLayout
             android:orientation="vertical"
@@ -40,66 +41,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="By: ClassName"
-                android:id="@+id/questionByid" />
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignTop="@+id/scrollView"
-                android:layout_marginTop="5dp"
-                >
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1"
-                    android:id="@+id/button2" />
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2"
-                    android:id="@+id/button" />
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="3"
-                    android:id="@+id/button3" />
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4"
-                    android:id="@+id/button4" />
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5"
-                    android:id="@+id/button5" />
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="6"
-                    android:id="@+id/button6" />
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="7"
-                    android:id="@+id/button7" />
-
-            </LinearLayout>
+                android:id="@+id/questByClassid" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -111,7 +53,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="QTEXT"
                 android:id="@+id/qtextid"
                 android:layout_alignTop="@+id/scrollView"
@@ -150,7 +92,9 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Correct Ans"
-                android:id="@+id/correctAnsid"/>
+                android:id="@+id/correctAnsid"
+                android:layout_gravity="center"
+                />
 
             <Button
                 android:layout_width="match_parent"
@@ -160,5 +104,4 @@
 
         </LinearLayout>
     </ScrollView>
-
 </RelativeLayout>

@@ -21,10 +21,19 @@
         <activity android:name=".DashboardScreen" />
         <activity android:name=".RegistrationScreen" />
         <activity android:name=".OTPScreen" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Banking_Segments" />
         <activity android:name=".MPSC_UPSC_Segments" />
-        <activity android:name=".WelcomeActivity"></activity>
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".QuestionSelectionActivity" />
+        <activity android:name=".RandomQuestionActivity" />
+        <activity android:name=".SelectChallengeFriendActivity"></activity>
     </application>
 
 </manifest>

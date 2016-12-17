@@ -6,18 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LoginActivity extends AppCompatActivity {
+public class QuestionSelectionActivity extends AppCompatActivity {
 
-    Button loginBtn;
+    Button randomQuestionBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        loginBtn = (Button)findViewById(R.id.loginbtnid);
-        loginBtn.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_question_selection);
+
+        randomQuestionBtn = (Button)findViewById(R.id.randomQid);
+        randomQuestionBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),WelcomeActivity.class);
+                Intent intent = new Intent(getApplicationContext(),RandomQuestionActivity.class);
                 startActivity(intent);
                 finish();
             }
